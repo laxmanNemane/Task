@@ -163,5 +163,62 @@ letter-spacing: -0.8;
 }
 
 
+/* brands */
+
+.banner {
+  width: 80%;
+  overflow: hidden;
+}
+
+.banner-inner {
+  display: flex;
+  animation: scroll-banner 8s linear infinite;
+}
+
+.banner-image {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-inner img{
+    width: 300px;
+    height: 100px;
+    padding: 0 60px;
+  }
+  
+  @keyframes scroll-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+img {
+  display: inline-block;
+}
 
 
+/*keyframe animations*/
+.first {
+	        animation: bannermove 10s linear infinite;
+}
+ 
+@keyframes bannermove {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 

@@ -18,7 +18,7 @@ import MainFooter from "./Layout/MainFooter";
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <HeroSection />
       <EveryOneSection />
       <Brands />
