@@ -14,7 +14,7 @@ const HeroSection = () => {
             </p>
             <Button
               text="Sign up for free"
-              buttonStyle="global-btn canva-primmary-btn"
+              buttonStyle="global-btn canva-primmary-btn "
             />
           </div>
         </div>

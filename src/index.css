@@ -90,12 +90,14 @@ body{
   .global-btn{
     padding: 8px 20px;
     border: none;
+    font-weight: 600;
     font-size: 14px;
     border-radius: 5px;
   }
 
   .canva-primmary-btn{
     background-color: #916CFA;
+    font-weight: 600;
     color: white;
    
   }

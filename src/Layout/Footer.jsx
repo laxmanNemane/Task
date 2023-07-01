@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-12 d-none d-lg-block">
             <div className="footer-content  no-toggle">
-              <div className="">
+              <div className="list-element">
                 <h3>Features</h3>
                 <ul className="list-unstyled ">
                   {Fetures?.map((listName, index) => {
@@ -78,7 +78,7 @@ const Footer = () => {
                   })}
                 </ul>
               </div>
-              <div className="">
+              <div className="list-element">
                 <h3>Explore</h3>
                 <ul className="list-unstyled ">
                   {Explore?.map((listName, index) => {
@@ -86,7 +86,7 @@ const Footer = () => {
                   })}
                 </ul>
               </div>
-              <div className="">
+              <div className="list-element">
                 <h3>Community</h3>
                 <ul className="list-unstyled ">
                   {Community?.map((listName, index) => {
@@ -94,7 +94,7 @@ const Footer = () => {
                   })}
                 </ul>
               </div>
-              <div className="">
+              <div className="list-element">
                 <h3>Download</h3>
                 <ul className="list-unstyled ">
                   {Download?.map((listName, index) => {
@@ -102,7 +102,7 @@ const Footer = () => {
                   })}
                 </ul>
               </div>
-              <div className="">
+              <div className="list-element">
                 <h3>Company</h3>
                 <ul className="list-unstyled ">
                   {Company?.map((listName, index) => {
@@ -114,13 +114,13 @@ const Footer = () => {
           </div>
           <div className=" toggle">
             <div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className=" toggle-footer-content d-flex justify-content-between align-items-center">
                 <h3>Fetures</h3>
                 <div onClick={() => onToogleHandler("Fetures")}>
                   <BiChevronDown />
                 </div>
               </div>
-              <div>
+              <div className="list-element">
                 {collapse === "Fetures" && toggle ? (
                   <ul className="list-unstyled ">
                     {Fetures?.map((listName, index) => {
@@ -133,14 +133,14 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
                 <h3>Explore</h3>
                 <div onClick={() => onToogleHandler("Explore")}>
                   {" "}
                   <BiChevronDown />
                 </div>
               </div>
-              <div>
+              <div className="list-element">
                 {collapse === "Explore" && toggle ? (
                   <ul className="list-unstyled ">
                     {Explore?.map((listName, index) => {
@@ -153,14 +153,14 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
                 <h3>Community</h3>
                 <div onClick={() => onToogleHandler("Community")}>
                   {" "}
                   <BiChevronDown />
                 </div>
               </div>
-              <div>
+              <div className="list-element">
                 {collapse === "Community" && toggle ? (
                   <ul className="list-unstyled ">
                     {Community?.map((listName, index) => {
@@ -173,14 +173,14 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
                 <h3>Download</h3>
                 <div onClick={() => onToogleHandler("Download")}>
                   {" "}
                   <BiChevronDown />
                 </div>
               </div>
-              <div>
+              <div className="list-element">
                 {collapse === "Download" && toggle ? (
                   <ul className="list-unstyled ">
                     {Download?.map((listName, index) => {
@@ -193,14 +193,14 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="d-flex justify-content-between align-items-center">
+              <div className=" toggle-footer-content d-flex justify-content-between align-items-center">
                 <h3>Company</h3>
                 <div onClick={() => onToogleHandler("Company")}>
                   {" "}
                   <BiChevronDown />
                 </div>
               </div>
-              <div>
+              <div className="list-element">
                 {collapse === "Company" && toggle ? (
                   <ul className="list-unstyled ">
                     {Company?.map((listName, index) => {

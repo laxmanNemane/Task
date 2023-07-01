@@ -1,9 +1,13 @@
 import React from "react";
 import Button from "../Component/Button";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { BsFolder2Open } from "react-icons/bs";
+import { AiOutlineUsergroupAdd } from "react-icons/ai";
+import { TbMessagePlus } from "react-icons/tb";
 
 const WorkTogether = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5 ">
       <div className="row">
         <div className="col-12 pb-4">
           <div className="work-together-section d-flex flex-column align-items-center">
@@ -16,15 +20,15 @@ const WorkTogether = () => {
           </div>
         </div>
 
-        <div className="col-12 py-4">
-          <div className="row">
+        <div className="col-12 pb-5">
+          <div className="row ">
             <div className="col-lg-6 col-md-6 col-sm-12 order-sm-2 order-md-1 order-lg-1">
               <div className="description-messages">
                 <ul className="list-unstyled">
-                  <li className="py-2">
+                  <li className="py-3">
                     <div className="d-flex">
                       <span className="icon-view">
-                        <i class="fa-light fa-folder-open"></i>
+                        <BsFolder2Open />
                       </span>
                       <span>
                         <span className="text-litle-bold"> Team folders </span>{" "}
@@ -33,9 +37,11 @@ const WorkTogether = () => {
                       </span>
                     </div>
                   </li>
-                  <li className="py-2">
+                  <li className="py-3">
                     <div className="d-flex">
-                      <span className="icon-view"></span>
+                      <span className="icon-view">
+                        <HiOutlineDevicePhoneMobile />
+                      </span>
                       <span>
                         <span className="text-litle-bold">
                           {" "}
@@ -45,9 +51,11 @@ const WorkTogether = () => {
                       </span>
                     </div>
                   </li>
-                  <li className="py-2">
+                  <li className="py-3">
                     <div className="d-flex">
-                      <span className="icon-view"></span>
+                      <span className="icon-view">
+                        <AiOutlineUsergroupAdd />
+                      </span>
                       <span>
                         <span className="text-litle-bold">
                           {" "}
@@ -57,9 +65,11 @@ const WorkTogether = () => {
                       </span>
                     </div>
                   </li>
-                  <li className="py-2">
-                    <div className="d-flex">
-                      <span className="icon-view"></span>
+                  <li className="py-3">
+                    <div className="d-flex ">
+                      <span className="icon-view">
+                        <TbMessagePlus />
+                      </span>
                       <span>
                         <span className="text-litle-bold">
                           Built-in comments
@@ -79,19 +89,25 @@ const WorkTogether = () => {
 
             <div className="col-lg-6 col-md-6 col-sm-12 order-sm-1 order-md-2 order-lg-2">
               <div class="video-section">
-                <video
+                {/* <video
                   class="ZGpsMQ"
                   src="https://static.canva.com/anon_home/teams-en-974x720.mp4"
                   loop=""
                   playsinline=""
                   preload="none"
-                ></video>
+                ></video> */}
+                <img
+                  alt="Too good not to share"
+                  src="https://static.canva.com/anon_home/benefits/benefits-share-en-1288x838.jpg"
+                  className="im1gjQ w-100"
+                  draggable="false"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-12 text-center">
+        <div className="col-12 text-center pb-5">
           <div className="button-group">
             <Button
               text="Try Canva for Teams"

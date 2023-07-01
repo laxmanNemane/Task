@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Component/Button";
 import MainContentCard from "../Component/MainContentCard";
+import { FaCrown } from "react-icons/fa";
 
 const EveryOneSection = () => {
   return (
@@ -11,25 +12,27 @@ const EveryOneSection = () => {
             <h2>A perfect fit for everyone</h2>
             <div className="container">
               <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12 py-2">
+                <div className="col-lg-4 col-md-4 col-sm-12 py-2 px-4 ">
                   <MainContentCard
                     title="Canva Free"
                     paragraph="For anyone wanting to design anything, on your own or with others. No design experience required, and it's free forever."
                     btnText="Get Canva Free"
                   />
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-12  py-2">
+                <div className="col-lg-4 col-md-4 col-sm-12  py-2  px-4">
                   <MainContentCard
                     title="Canva Pro"
                     paragraph="For individuals wanting unlimited access to premium content, with special tools to grow your brand or passion project."
                     btnText="Start your free pro trial"
+                    icon={<FaCrown />}
                   />
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-12  py-2">
+                <div className="col-lg-4 col-md-4 col-sm-12  py-2  px-4">
                   <MainContentCard
                     title="Canva for Teams"
-                    paragraph="For teams of all sizes wanting to create together, with premium workplace tools and approval flows."
+                    paragraph="For teams of all sizes wanting to create together, with premium workplace tools and approval flows. premium workplace tools."
                     btnText="Start your free Teams trial"
+                    icon={<FaCrown />}
                   />
                 </div>
               </div>
@@ -41,7 +44,7 @@ const EveryOneSection = () => {
               buttonStyle="global-btn w-25 contact-sales-btn"
             />
           </div>
-          <div className="col-12 text-center pt-5">
+          <div className="col-12 text-center messge pt-5">
             <p>
               <span className="link-sales">Educational organisations</span> and{" "}
               <span className="link-sales">nonprofits</span> can enjoy premium

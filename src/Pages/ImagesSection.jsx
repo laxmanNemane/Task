@@ -2,7 +2,7 @@ import React from "react";
 
 const ImagesSection = () => {
   return (
-    <div className="container py-5">
+    <div className="template-section container py-5">
       <div className="row">
         <div className="col-12">
           <div className="templates-section d-flex flex-column align-items-center ">
