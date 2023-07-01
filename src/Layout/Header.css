@@ -73,9 +73,9 @@ padding: 7px 10px;
 
 @media (max-width: 991px)
 {
-  .menu-list{
+  /* .menu-list{ */
     /* width: 30%; */
-  }
+  /* } */
 }
 @media (max-width: 767px)
 {
