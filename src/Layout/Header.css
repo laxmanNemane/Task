@@ -69,18 +69,29 @@ padding: 7px 10px;
   .div-to-disable {
     display: none; /* Hide the divs on mobile screens */
   }
+
+ 
 }
 
-@media (max-width: 991px)
+@media (max-width: 450px)
 {
-  /* .menu-list{ */
-    /* width: 30%; */
-  /* } */
+  .searchbar-section{
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .searchbar-section input{
+    display: none;
+  }
 }
 @media (max-width: 767px)
 {
-  .menu-list{
+  .small-disable{
     /* width: 20%; */
+    display: none;
   } 
+ 
 }
 

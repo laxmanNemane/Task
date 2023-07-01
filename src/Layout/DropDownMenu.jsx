@@ -5,7 +5,10 @@ const DropDownMenu = ({ menuName }) => {
   return (
     <div>
       {" "}
-      <li className="mx-2" style={{ whiteSpace: "nowrap" }}>
+      <li
+        className="mx-2 d-flex justify-content-between align-items-center"
+        style={{ whiteSpace: "nowrap" }}
+      >
         <div>
           {menuName}
           <span className="p-1">
