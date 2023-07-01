@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <div className="Header-section" style={{ overflow: "scroll" }}>
+      <div className="Header-section" style={{ overflowX: "auto" }}>
         <div
           className="header-content"
           style={{ justifyContent: "flex-start" }}
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
           <div
             style={{ width: "100%" }}
-            className="ms-2 d-flex justify-content-between"
+            className="ms-2 d-flex justify-content-between div-to-disable"
           >
             <div className=" d-flex border " style={{ flex: 1 }}>
               <div className="p-2">
