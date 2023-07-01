@@ -3,7 +3,7 @@ import Button from "../Component/Button";
 
 const HeroSection = () => {
   return (
-    <div className="container py-3">
+    <div className="container py-3 mt-5">
       <div className="row">
         <div className="col-12 ">
           <div className="hero-section-content d-flex flex-column justify-content-center align-items-center">

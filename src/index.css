@@ -188,6 +188,10 @@ margin-bottom: 2rem;
   }
 
 
+  input::placeholder {
+    color: #757A7F; /* Placeholder text color */
+  }
+
   /* ======responsive===== */
 
 

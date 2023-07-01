@@ -4,8 +4,8 @@ const ImagesSection = () => {
   return (
     <div className="template-section container py-5">
       <div className="row">
-        <div className="col-12">
-          <div className="templates-section d-flex flex-column align-items-center ">
+        <div className="col-12 ">
+          <div className="templates-section d-flex flex-column align-items-center pb-5 ">
             <h2>Templates for absolutely anything</h2>
             <p>
               Customise an office template, or design something more personal,

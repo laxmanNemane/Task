@@ -107,8 +107,8 @@ letter-spacing: -0.8;
 
 /* template section */
 .template-section{
-    padding: 50px 0;
-    margin-bottom: 30px;
+    /* padding: 50px 0;
+    margin-bottom: 30px; */
 }
 
 .templates-section h2{
