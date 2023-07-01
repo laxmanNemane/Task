@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <div className="Header-section">
+      <div className="Header-section" style={{ overflow: "scroll" }}>
         <div
           className="header-content"
           style={{ justifyContent: "flex-start" }}
