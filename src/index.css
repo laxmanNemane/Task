@@ -1,88 +1,233 @@
-.react-calendar { 
-    width: 400px;
-    max-width: 100%;
-    background-color: #fff;
-    color: #222;
-    border-radius: 8px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.125em;
-   }
-   .react-calendar__navigation button {
-    color: #6f48eb;
-    min-width: 44px;
-    background: none;
-    font-size: 16px;
-    margin-top: 8px;
-   }
-   .react-calendar__navigation button:enabled:hover,
-   .react-calendar__navigation button:enabled:focus {
-    background-color: #f8f8fa;
-   }
-   .react-calendar__navigation button[disabled] {
-    background-color: #f0f0f0;
-   }
-   abbr[title] {
-    text-decoration: none;
-   }
-   /* .react-calendar__month-view__days__day--weekend {
-    color: #d10000;
-   } */
-   .react-calendar__tile:enabled:hover,
-   .react-calendar__tile:enabled:focus {
-    background: #f8f8fa;
-    color: #6f48eb;
-    border-radius: 6px;
-   }
-   .react-calendar__tile--now {
-    background: #6f48eb33;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #6f48eb;
-   }
-   .react-calendar__tile--now:enabled:hover,
-   .react-calendar__tile--now:enabled:focus {
-    background: #6f48eb33;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #6f48eb;
-   }
-   .react-calendar__tile--hasActive:enabled:hover,
-   .react-calendar__tile--hasActive:enabled:focus {
-    background: #f8f8fa;
-   }
-   .react-calendar__tile--active {
-    background: #6f48eb;
-    border-radius: 6px;
-    font-weight: bold;
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  /* font sizes */
+  --font-size-5xs: "10px";
+  --font-size-4xs: 11px;
+  --font-size-3xs: 12px;
+  --font-size-2xs: 14px;
+  --font-size-xs: 15px;
+  --font-size-sm: 16px;
+  --font-size-base: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 30px;
+  /* Colors */
+  --color-white: #fff;
+  --color-teal-100: #0f6274;
+  --color-gray-100: #a9b6c2;
+  --color-gray-200: #a6a1a1;
+  --color-gray-300: #162635;
+  --color-gray-400: #111;
+  --color-gray-500: rgba(255, 255, 255, 0.83);
+  --color-gray-600: rgba(217, 217, 217, 0);
+  --color-gray-700: rgba(169, 182, 194, 0.5);
+  --color-gray-800: rgba(188, 181, 181, 0.37);
+  --color-black: #000;
+  --color-red: #ff0000;
+  /* Gaps */
+  --gap-sm: 17px;
+  --gap-md: 40px;
+  /* Paddings */
+  --padding-md: 50px;
+  /* border radiuses */
+  --br-2xs: 2px;
+  --br-xs: 10px;
+  --br-sm: 11px;
+  --br-md: 15px;
+  --br-lg: 20px;
+  --br-xl: 30px;
+}
+
+
+body{
+    font-size: 1.14rem;
+  }
+  
+  
+  /* 14px = 1.14*/
+  
+  h1{
+    font: 3rem !important;
+  
+  }
+  h2{
+    font-size: 2rem !important;
+  }
+  h3{
+    font-size: 1rem !important;
+  }
+  
+  .color-heading{
+    color: #0d1216 !important;
+  }
+  
+  .color-paragraph{
+    color: #0d1216 !important;
+  
+  }
+  
+  .color-paragraph-shade{
+    color: #0d1216b3 !important;
+  }
+  
+  .color-paragraph-Tints{
+    color: #0d1216db !important;
+  }
+
+  .line-hight{
+   
+        line-height: 1.5; /* Adjust the line height value as needed */
+  
+  }
+
+
+
+  .App{
+    width: 100%;
+
+  }
+
+  .global-btn{
+    padding: 8px 20px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .canva-primmary-btn{
+    background-color: #916CFA;
     color: white;
-   }
-   .react-calendar__tile--active:enabled:hover,
-   .react-calendar__tile--active:enabled:focus {
-    background: #6f48eb;
-    color: white;
-   }
-   .react-calendar--selectRange .react-calendar__tile--hover {
-    background-color: #f8f8fa;
-   }
-   .react-calendar__tile--range {
-    background: #f8f8fa;
-    color: #6f48eb;
-    border-radius: 0;
-   }
-   .react-calendar__tile--rangeStart {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    background: #6f48eb;
-    color: white;
-   }
-   .react-calendar__tile--rangeEnd {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background: #6f48eb;
-    color: white;
-   }
+   
+  }
+  .canva-primmary-btn:hover{
+    background-color: #8361e1;
+  }
+
+  .link-sales{
+    border-bottom: 1px solid #8361e1;
+    color: #8361e1;
+  }
+
+
+  /* slider */
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .slide:hover {
+    cursor: pointer;
+    transition: none;
+  }
+
+
+  /* conetent section */
+
+  .content-section{
+    height: 415px;
+    display: flex;
+    flex-direction: column ;
+    line-height: 1.1;
+justify-content: center;
+width: 80%;
+    
+  }
+
+  .content-section h2{
+margin-bottom: 2rem;
+   
+  }
+
+  .content-section p{
+    margin-bottom: 1.6rem;
+       
+      }
+
+      .content-section div button{
+        padding: 13px 20px !important;
+      }
+
+
+
+      /* cretae work  */
+      .text-litle-bold{
+        font-weight: 600;
+      }
+
+ 
+
+  @media (max-width: 590px) {
+    .images-display-none{
+        display: none;
+      }
+      .contact-sales-btn{
+        width:180px !important;
+      }
+  }
+
+
+  .react-multiple-carousel__arrow{
+    background-color: white !important;
+    border: 1px solid gray !important;
+  }
+  .react-multiple-carousel__arrow::before{
+    color :black !important;
+  }
+
+
+  /* ======responsive===== */
+
+
+@media (max-width: 991px)
+{
+
+}
+@media (max-width: 767px)
+{
+    
+}
+@media only screen and (min-device-width: 375px)
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+   { 
+
+    /* mobile views */
+
+}
+@media (min-width: 768px) and (max-width: 991px)
+{ 
+    /* proper tab view */
+
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    /* mackbook or tab View */
+}
+@media (min-width: 768px)
+{
+    /* tablet view */
+}
+@media (min-width: 1200px)
+{ 
+    /* Macbook View */
+} 
+@media (min-width: 1400px)
+{
+    /* For Dekstop application page */
+}
+@media (min-width: 1600px) 
+{ 
+    /* For Big screen  */
+    /* for Large screen above the 1600 px  ⚠️ If  below 1600 thousand inside block css will not work */
+}

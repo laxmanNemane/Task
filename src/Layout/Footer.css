@@ -1,0 +1,24 @@
+.footer-content {
+    width: 100%;
+    display: flex;
+}
+
+.footer-content div{
+    width: 500px;
+}
+
+
+@media (max-width: 1140px) {
+    .footer-content{
+        display: none;
+    }
+    
+  }
+
+
+  @media (min-width: 1140px) {
+    .toggle{
+        display: none;
+    }
+    
+  }
