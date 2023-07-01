@@ -13,7 +13,7 @@ const ImagesSection = () => {
             </p>
             <div className="container">
               <div className="row">
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6 my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -24,7 +24,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -35,7 +35,7 @@ const ImagesSection = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -46,7 +46,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6 my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -56,7 +56,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA w-100">
                     <img
                       alt=""
@@ -67,7 +67,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -78,7 +78,7 @@ const ImagesSection = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -90,7 +90,7 @@ const ImagesSection = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -100,7 +100,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
@@ -111,7 +111,7 @@ const ImagesSection = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3 col-sm-6 mx-1 my-2">
+                <div className="col-lg-2 col-md-3 col-sm-6  my-2">
                   <div class="WE2ijA">
                     <img
                       alt=""
