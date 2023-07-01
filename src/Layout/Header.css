@@ -61,6 +61,15 @@ padding: 7px 10px;
   /* width: 50%; */
   display: flex;
 }
+.div-to-disable {
+  display: block; /* Default display value for the divs */
+}
+@media (max-width: 768px) {
+  /* Media query for mobile screens (up to 768px) */
+  .div-to-disable {
+    display: none; /* Hide the divs on mobile screens */
+  }
+}
 
 @media (max-width: 991px)
 {

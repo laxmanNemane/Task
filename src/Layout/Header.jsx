@@ -24,7 +24,7 @@ const Header = () => {
               width={130}
             />
           </div>
-          <div className=" pt-1 mr-2">
+          <div className=" pt-1 mr-2 div-to-disable">
             <ul className="d-flex list-unstyled m-0">
               <DropDownMenu menuName="Design Spotlight" />
               <DropDownMenu menuName="Bussiness" />
@@ -37,7 +37,7 @@ const Header = () => {
             style={{ width: "100%" }}
             className="ms-2 d-flex justify-content-between"
           >
-            <div className=" d-flex border" style={{ flex: 1 }}>
+            <div className=" d-flex border " style={{ flex: 1 }}>
               <div className="p-2">
                 <HiOutlineSearch />
               </div>
@@ -49,7 +49,7 @@ const Header = () => {
               />
             </div>
             <div
-              className="but-group d-flex justify-content-between"
+              className="but-group d-flex justify-content-between div-to-disable"
               style={{ marginLeft: "5px" }}
             >
               <button
