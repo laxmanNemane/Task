@@ -22,7 +22,7 @@ const WorkTogether = () => {
 
         <div className="col-12 pb-5">
           <div className="row ">
-            <div className="col-lg-6 col-md-6 col-sm-12 order-sm-2 order-md-1 order-lg-1">
+            <div className="col-lg-6 col-md-6 col-sm-12 order-2 order-md-1">
               <div className="description-messages">
                 <ul className="list-unstyled">
                   <li className="py-3">
@@ -87,21 +87,22 @@ const WorkTogether = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-6 col-sm-12 order-sm-1 order-md-2 order-lg-2">
+            <div className="col-lg-6 col-md-6 col-sm-12 order-1 order-md-2">
               <div class="video-section">
-                {/* <video
-                  class="ZGpsMQ"
-                  src="https://static.canva.com/anon_home/teams-en-974x720.mp4"
-                  loop=""
-                  playsinline=""
+                <video
+                  className="ZGpsMQ w-100"
+                  loop
+                  autoPlay
+                  muted
                   preload="none"
-                ></video> */}
-                <img
-                  alt="Too good not to share"
-                  src="https://static.canva.com/anon_home/benefits/benefits-share-en-1288x838.jpg"
-                  className="im1gjQ w-100"
-                  draggable="false"
-                />
+                >
+                  <source
+                    src="https://static.canva.com/anon_home/teams-en-974x720.mp4"
+                    type="video/mp4"
+                  />
+                  {/* Fallback image */}
+                  <img src="fallback-image.jpg" alt="Fallback Image" />
+                </video>
               </div>
             </div>
           </div>

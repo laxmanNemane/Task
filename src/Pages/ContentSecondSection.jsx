@@ -8,7 +8,7 @@ const ContentSecondSection = () => {
         <div className="col-12">
           <div className="ready-to-made-section">
             <div className="row ">
-              <div className="col-lg-6 col-md-6 col-sm-12 order-sm-2 order-md-1 order-lg-1">
+              <div className="col-lg-6 col-md-6 col-sm-12 order-2 order-md-1">
                 <div className="content-section">
                   <h2>Built for teamwork</h2>
                   <p>
@@ -26,22 +26,23 @@ const ContentSecondSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12 order-sm-1 order-md-2 order-lg-2">
+              <div className="col-lg-6 col-md-6 col-sm-12 order-1 order-md-2">
                 <div className="image-section w-100">
-                  {/* <video
-                    src="https://static.canva.com/anon_home/benefits-start-en-1200x780-compressed.mp4"
-                    title="Ready-made designs"
-                    loop=""
-                    playsInline=""
+                  <video
+                    className="ZGpsMQ w-100"
+                    loop
+                    autoPlay
+                    muted
                     preload="none"
-                    className="w-100"
-                  ></video> */}
-                  <img
-                    alt="Too good not to share"
-                    src="https://static.canva.com/anon_home/benefits/benefits-share-en-1288x838.jpg"
-                    className="im1gjQ w-100"
-                    draggable="false"
-                  />
+                  >
+                    <source
+                      src="https://static.canva.com/anon_home/benefits/benefits-collab-en-974x634.mp4"
+                      type="video/mp4"
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                    {/* Fallback image */}
+                    <img src="fallback-image.jpg" alt="Fallback Image" />
+                  </video>
                 </div>
               </div>
             </div>

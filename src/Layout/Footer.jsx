@@ -114,9 +114,12 @@ const Footer = () => {
           </div>
           <div className=" toggle">
             <div>
-              <div className=" toggle-footer-content d-flex justify-content-between align-items-center">
+              <div
+                onClick={() => onToogleHandler("Fetures")}
+                className=" toggle-footer-content d-flex justify-content-between align-items-center"
+              >
                 <h3>Fetures</h3>
-                <div onClick={() => onToogleHandler("Fetures")}>
+                <div>
                   <BiChevronDown />
                 </div>
               </div>
@@ -133,9 +136,12 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
+              <div
+                onClick={() => onToogleHandler("Explore")}
+                className="toggle-footer-content d-flex justify-content-between align-items-center"
+              >
                 <h3>Explore</h3>
-                <div onClick={() => onToogleHandler("Explore")}>
+                <div>
                   {" "}
                   <BiChevronDown />
                 </div>
@@ -153,9 +159,12 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
+              <div
+                onClick={() => onToogleHandler("Community")}
+                className="toggle-footer-content d-flex justify-content-between align-items-center"
+              >
                 <h3>Community</h3>
-                <div onClick={() => onToogleHandler("Community")}>
+                <div>
                   {" "}
                   <BiChevronDown />
                 </div>
@@ -173,7 +182,10 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="toggle-footer-content d-flex justify-content-between align-items-center">
+              <div
+                onClick={() => onToogleHandler("Download")}
+                className="toggle-footer-content d-flex justify-content-between align-items-center"
+              >
                 <h3>Download</h3>
                 <div onClick={() => onToogleHandler("Download")}>
                   {" "}
@@ -193,9 +205,12 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className=" toggle-footer-content d-flex justify-content-between align-items-center">
+              <div
+                onClick={() => onToogleHandler("Company")}
+                className=" toggle-footer-content d-flex justify-content-between align-items-center"
+              >
                 <h3>Company</h3>
-                <div onClick={() => onToogleHandler("Company")}>
+                <div>
                   {" "}
                   <BiChevronDown />
                 </div>

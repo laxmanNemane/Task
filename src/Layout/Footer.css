@@ -33,9 +33,36 @@
     font-size: 19px !important;
     letter-spacing: 0.9;
   }
+ 
 
   .list-element ul li{
     color: #0d1216 !important;
     font-size: 14px !important;
     margin-bottom: 7px;
+  }
+
+
+  .bootom-footer-contnet{
+    display: flex;
+  }
+
+
+  @media (max-width: 576px) {
+    .custom-col-sm-width {
+      width: 50% !important;
+    }
+
+    .list-element{
+      padding-bottom: 13px;
+    }
+    
+  }
+
+  @media (max-width:1150px){
+    .list-element{
+      padding-bottom: 13px;
+    }
+    .list-element ul{
+      padding-left: 20px;
+    }
   }

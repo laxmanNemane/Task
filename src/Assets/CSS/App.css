@@ -172,7 +172,7 @@ letter-spacing: -0.8;
 
 .banner-inner {
   display: flex;
-  animation: scroll-banner 8s linear infinite;
+  animation: scroll-banner 15s linear infinite;
 }
 
 .banner-image {
@@ -182,8 +182,8 @@ letter-spacing: -0.8;
   }
 
   .banner-inner img{
-    width: 300px;
-    height: 100px;
+    width: auto;
+    height: auto;
     padding: 0 60px;
   }
   
@@ -196,22 +196,7 @@ letter-spacing: -0.8;
     }
   }
 
-  .photobanner {
-	height: 233px;
-	width: 3550px;
-	margin-bottom: 80px;
-}
-
-img {
-  display: inline-block;
-}
-
-
-.im1gjQ-image{
-    border-radius: 10px;
-    border: 1px solid rgba(161, 161, 161, 0.441);
-}
-
+  
 /*keyframe animations*/
 .first {
 	        animation: bannermove 10s linear infinite;
@@ -226,4 +211,21 @@ img {
  }
  
 }
+
+
+@media (max-width: 576px) {
+    .hero-section-content h1{
+        font-size: 2rem !important;
+        }
+        .hero-section-content p{
+            font-size: 0.9rem !important;
+        }
+        .sales-everyone-section h2,
+  .content-section h2,
+  .templates-section h2,
+  .work-together-section h2,
+  .surprise-section h2 , .brands-section h2 {
+    font-size: 24px !important;
+  }
+  }
  

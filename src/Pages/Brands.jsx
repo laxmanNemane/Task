@@ -9,7 +9,7 @@ const Brands = () => {
   return (
     <div className="container py-4">
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 pb-3">
           <div className="brands-section d-flex flex-column align-items-center">
             <h2 className="pb-3">Trusted by well known companies</h2>
             <div className="trust-brnads pb-5 W-100" style={{ width: "100%" }}>

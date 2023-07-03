@@ -6,8 +6,10 @@ const HeroSection = () => {
     <div className="container py-3 mt-5">
       <div className="row">
         <div className="col-12 ">
-          <div className="hero-section-content d-flex flex-column justify-content-center align-items-center">
-            <h1 className="line-hight">What will you design today?</h1>
+          <div className="hero-section-content d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 className="line-hight text-center">
+              What will you design today?
+            </h1>
             <p className="color-paragraph">
               Canva makes it easy to create professional designs and to share or
               print them.
@@ -44,14 +46,15 @@ const HeroSection = () => {
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12 col-12 ">
           <div className="video w-100">
-            <video
-              autoplay=""
-              className="vgWuEg w-100"
-              draggable="false"
-              loop=""
-              playsinline=""
-              src="https://content-management-files.canva.com/943bd1b3-ffd6-4892-a4df-b107cb33e657/hero-banner-en-1600x852.mp4"
-            ></video>
+            <video className="ZGpsMQ w-100" loop autoPlay muted preload="none">
+              <source
+                src="https://content-management-files.canva.com/943bd1b3-ffd6-4892-a4df-b107cb33e657/hero-banner-en-1600x852.mp4"
+                type="video/mp4"
+                // style={{ width: "100%", height: "100%" }}
+              />
+              {/* Fallback image */}
+              <img src="fallback-image.jpg" alt="Fallback Image" />
+            </video>
           </div>
         </div>
 

@@ -10,20 +10,20 @@ const Content = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="image-section w-100">
-                  {/* <video
-                    src="https://static.canva.com/anon_home/benefits-start-en-1200x780-compressed.mp4"
-                    title="Ready-made designs"
-                    loop=""
-                    playsInline=""
+                  <video
+                    className="ZGpsMQ w-100"
+                    loop
+                    autoPlay
+                    muted
                     preload="none"
-                    className="w-100"
-                  ></video> */}
-                  <img
-                    alt="Too good not to share"
-                    src="https://static.canva.com/anon_home/benefits/benefits-share-en-1288x838.jpg"
-                    className="im1gjQ w-100"
-                    draggable="false"
-                  />
+                  >
+                    <source
+                      src="https://static.canva.com/anon_home/benefits-start-en-1200x780-compressed.mp4"
+                      type="video/mp4"
+                    />
+                    {/* Fallback image */}
+                    <img src="fallback-image.jpg" alt="Fallback Image" />
+                  </video>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12">
