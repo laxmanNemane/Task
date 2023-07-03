@@ -165,11 +165,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <divclassName="toggle">
+          <div className=" toggle">
             <div>
               <div
                 onClick={() => onToogleHandler("Fetures")}
-               className="toggle-footer-content d-flex justify-content-between align-items-center"
+                className=" toggle-footer-content d-flex justify-content-between align-items-center"
               >
                 <h3>Fetures</h3>
                 <div>
