@@ -191,7 +191,7 @@ const Header = () => {
                   menuItems.map((item) => (
                     <DropDownMenu
                       key={item.id}
-                      className="my-1"
+                      className="my-1 pb-3 navbar-menu"
                       menuName={item.name}
                     />
                   ))}

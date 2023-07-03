@@ -38,6 +38,10 @@
   outline: none;
 }
 
+.navbar-menu li{
+  padding-bottom: 14px !important;
+}
+
 .header-btn{
   padding: 8px 20px;
   border: none;

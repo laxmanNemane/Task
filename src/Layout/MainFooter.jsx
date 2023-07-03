@@ -9,7 +9,11 @@ const MainFooter = () => {
       <div className="row">
         <div className=" col-sm-12 col-md-2 col-lg-2 order-1 order-md-1  ">
           <div className="select-box text-center  py-2 pb-3">
-            <select name="country-langaude" id="langauge">
+            <select
+              name="country-langaude"
+              id="langauge"
+              className="select-box"
+            >
               <option value="English">English</option>
               <option value="Marathi">Marathi</option>
               <option value="Urdu">Urdu</option>
