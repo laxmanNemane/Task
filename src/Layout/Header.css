@@ -75,6 +75,8 @@ padding: 7px 10px;
 
 @media (max-width: 450px)
 {
+
+ 
   .searchbar-section{
     display: flex;
     align-items: center;
@@ -86,7 +88,7 @@ padding: 7px 10px;
     display: none;
   }
 }
-@media (max-width: 767px)
+@media (max-width: 907px)
 {
   .small-disable{
     /* width: 20%; */
@@ -95,3 +97,8 @@ padding: 7px 10px;
  
 }
 
+@media (min-width: 746px) {
+  .hamburger {
+    display: none;
+  }
+}

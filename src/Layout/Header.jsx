@@ -70,6 +70,8 @@ const Header = () => {
       setShowDropdown(visibleCount < menuItems.length);
     };
 
+    setClick(true);
+
     // Event listener for window resize
     window.addEventListener("resize", handleResize);
 
@@ -85,16 +87,17 @@ const Header = () => {
   console.log(menuItems, visibleItems, "menuitssm");
   return (
     <>
-      <div className="Header-section" style={{ overflowX: "auto" }}>
+      <div className="Header-section">
         <div
           className="header-content"
           style={{ justifyContent: "flex-start" }}
         >
-          {visibleItems?.length === 0 && (
+          <div className="hamburger">
             <span onClick={() => setShow((prev) => !prev)} className="me-2">
               <HiMenu />
             </span>
-          )}
+          </div>
+
           <div className="logo " style={{ marginRight: "20px" }}>
             <img
               src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg"
@@ -106,11 +109,17 @@ const Header = () => {
           </div>
           <div className=" pt-1 mr-2 div-to-disabl">
             <ul className="d-flex list-unstyled m-0">
-              {visibleItems.map((item) => (
-                <li key={item.id}>
-                  <DropDownMenu menuName={item.name} />
-                </li>
-              ))}
+              {visibleItems?.length !== 0
+                ? visibleItems.map((item) => (
+                    <li key={item.id}>
+                      <DropDownMenu menuName={item.name} />
+                    </li>
+                  ))
+                : menuItems?.map((item) => (
+                    <li key={item.id} className="small-disable">
+                      <DropDownMenu menuName={item.name} />
+                    </li>
+                  ))}
               {showDropdown && (
                 <li className="dropdown-menu">
                   <button

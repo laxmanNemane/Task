@@ -1,11 +1,58 @@
 import React from "react";
-import first from "../Assets/Images/sony-music-grayscale-dark-theme.png";
-import second from "../Assets/Images/salesforce-grayscale-dark-theme.png";
-import third from "../Assets/Images/hubspot-grayscale-dark-theme.png";
-import fourt from "../Assets/Images/danone-grayscale-dark-theme.png";
-import five from "../Assets/Images/skyscanner-grayscale-dark-theme.png";
+import { useState } from "react";
 
 const Brands = () => {
+  const [brands, setBrands] = useState([
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/hubspot-monochrome.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/reddit-monochrome.png",
+    },
+    {
+      id: 1,
+      image:
+        "https://static.canva.com/anon_home/logos/skyscanner-grayscale.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/danone-grayscale.png",
+    },
+    {
+      id: 1,
+      image:
+        "https://static.canva.com/anon_home/logos/sony-music-monochrome.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/hubspot-monochrome.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/reddit-monochrome.png",
+    },
+    {
+      id: 1,
+      image:
+        "https://static.canva.com/anon_home/logos/skyscanner-grayscale.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/danone-grayscale.png",
+    },
+    {
+      id: 1,
+      image:
+        "https://static.canva.com/anon_home/logos/sony-music-monochrome.png",
+    },
+    {
+      id: 1,
+      image: "https://static.canva.com/anon_home/logos/hubspot-monochrome.png",
+    },
+  ]);
+
   return (
     <div className="container py-4">
       <div className="row">
@@ -14,17 +61,12 @@ const Brands = () => {
             <h2 className="pb-3">Trusted by well known companies</h2>
             <div className="trust-brnads pb-5 W-100" style={{ width: "100%" }}>
               <div class="banner">
-                <div class="banner-inner">
-                  <img src={first} alt="Reddit" class="K6VwFg" />
-                  <img src={second} alt="Reddit" class="K6VwFg" />
-                  <img src={third} alt="Reddit" class="K6VwFg" />
-                  <img src={fourt} alt="Reddit" class="K6VwFg" />
-                  <img src={five} alt="Reddit" class="K6VwFg" />
-                  <img src={first} alt="Reddit" class="K6VwFg" />
-                  <img src={second} alt="Reddit" class="K6VwFg" />
-                  <img src={third} alt="Reddit" class="K6VwFg" />
-                  <img src={fourt} alt="Reddit" class="K6VwFg" />
-                  <img src={five} alt="Reddit" class="K6VwFg" />
+                <div class="banner-inner py-2">
+                  {brands?.map((brand) => {
+                    return (
+                      <img src={brand.image} alt="Reddit" class="K6VwFg" />
+                    );
+                  })}
                 </div>
               </div>
             </div>

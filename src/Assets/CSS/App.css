@@ -1,167 +1,157 @@
-.images-1{
-    width: 320px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    border-radius: 10px;
+.images-1 {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 @media (max-width: 940px) {
-    .images-1{
-        width: 280px;
-        border-radius: 10px;
-    }
+  .images-1 {
+    width: 280px;
+    border-radius: 10px;
   }
+}
 
-  @media (max-width: 720px) {
-    .images-1{
-        width: 280px;
-        border-radius: 10px;
-    }
+@media (max-width: 720px) {
+  .images-1 {
+    width: 280px;
+    border-radius: 10px;
   }
+}
 
 @media (max-width: 590px) {
-    .images-1{
-        width: 280px;
-        border-radius: 10px;
-    }
-  }
-
-.images-1 .image-wraper{
-    /* margin: 10px; */
-    width: inherit;
-    margin-bottom: 10px;
+  .images-1 {
+    width: 280px;
     border-radius: 10px;
+  }
 }
 
-.images-1 .image-wraper img{
-    width: inherit;
-    height: auto;
-  
-    transition: transform 0.3s ease;
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 0;
-  
+.images-1 .image-wraper {
+  /* margin: 10px; */
+  width: inherit;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-.images-1 .image-wraper img:hover{
-    transform: scale(1.08);
-  
+.images-1 .image-wraper img {
+  width: inherit;
+  height: auto;
+
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
 }
 
+.images-1 .image-wraper img:hover {
+  transform: scale(1.08);
+}
 
 /* Hero section */
 
-.hero-section-content h1{
-font-size: 3rem !important;
-margin-bottom: 10px;
-letter-spacing: -0.8;
+.hero-section-content h1 {
+  font-size: 3rem !important;
+  margin-bottom: 10px;
+  letter-spacing: -0.8;
 }
 
-.hero-section-content p{
-    color: #55595b !important;
-    font-size: 21px;
-    margin-bottom: 20px;
+.hero-section-content p {
+  color: #55595b !important;
+  font-size: 21px;
+  margin-bottom: 20px;
 }
 
 /* everyone section */
 
-.sales-everyone-section h2{
-    font-size: 36px !important;
-    margin-bottom: 50px !important;
+.sales-everyone-section h2 {
+  font-size: 36px !important;
+  margin-bottom: 50px !important;
 }
 
-.icon-pro{
-    font-size: 30px !important;
-    color: #FABF3F;
+.icon-pro {
+  font-size: 30px !important;
+  color: #fabf3f;
 }
 
-.card-2 h3{
-    font-size: 24px !important;
-    margin-bottom: 20px;
+.card-2 h3 {
+  font-size: 24px !important;
+  margin-bottom: 20px;
 }
 
-.card-2 p{
-    color: #0d1216db !important;
-    font-size:14px !important ;
-    margin-bottom: 30px !important;
-    line-height: 1.4;
+.card-2 p {
+  color: #0d1216db !important;
+  font-size: 14px !important ;
+  margin-bottom: 30px !important;
+  line-height: 1.4;
 }
-.messge p{
-    color: #0d1216db !important;
+.messge p {
+  color: #0d1216db !important;
 }
-
 
 /* content section  */
 
-.content-section h2{
-    font-size: 36px !important;
+.content-section h2 {
+  font-size: 36px !important;
 }
-.content-section p{
-    color: #0d1216 !important;
-    line-height: 1.8;
+.content-section p {
+  color: #0d1216 !important;
+  line-height: 1.8;
 }
-
 
 /* template section */
-.template-section{
-    /* padding: 50px 0;
+.template-section {
+  /* padding: 50px 0;
     margin-bottom: 30px; */
 }
 
-.templates-section h2{
-    font-size: 36px !important;
+.templates-section h2 {
+  font-size: 36px !important;
 }
-.templates-section p{
-    color: rgba(13,18,22,.7) !important;
-    line-height: 1.8;
-}
-
-
-.work-together-section h2{
-    font-size: 36px !important;
-    margin-bottom: 20px !important;
-    
-}
-.work-together-section p{
-    color: rgba(13,18,22,.7) !important;
-    line-height: 1.3;
+.templates-section p {
+  color: rgba(13, 18, 22, 0.7) !important;
+  line-height: 1.8;
 }
 
-.icon-view{
-    font-size: 30px;
-    margin-right: 20px;
-    margin-bottom: -10px;
+.work-together-section h2 {
+  font-size: 36px !important;
+  margin-bottom: 20px !important;
+}
+.work-together-section p {
+  color: rgba(13, 18, 22, 0.7) !important;
+  line-height: 1.3;
+}
+
+.icon-view {
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: -10px;
 }
 
 /* surprise */
 
-
-
-.surprise-sectionn h2{
-    font-size: 36px !important;
-    margin-bottom: 10px !important;
+.surprise-sectionn h2 {
+  font-size: 36px !important;
+  margin-bottom: 10px !important;
 }
 
-.surprise-sectionn p{
-    color: #0d1216 !important;
-    line-height: 1.3;
+.surprise-sectionn p {
+  color: #0d1216 !important;
+  line-height: 1.3;
 }
 
-.heading-carousel-card{
-    font-size: 16px;
-    font-weight: 600;
-    color: #0d1216 !important;
+.heading-carousel-card {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d1216 !important;
 }
 
-.descriptive-message p{
-    color: rgba(13,18,22,.86);
-    font-size: 16px;
-    line-height: 1.4;
+.descriptive-message p {
+  color: rgba(13, 18, 22, 0.86);
+  font-size: 16px;
+  line-height: 1.4;
 }
-
 
 /* brands */
 
@@ -176,56 +166,53 @@ letter-spacing: -0.8;
 }
 
 .banner-image {
-    flex-shrink: 0;
-    width: 100%;
-    height: auto;
-  }
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
 
-  .banner-inner img{
-    width: auto;
-    height: auto;
-    padding: 0 60px;
-  }
-  
-  @keyframes scroll-banner {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+.banner-inner img {
+  /* width: 130px; */
+  height: 48px !important;
+  padding: 0 60px;
+}
 
-  
+@keyframes scroll-banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /*keyframe animations*/
 .first {
-	        animation: bannermove 10s linear infinite;
-}
- 
-@keyframes bannermove {
- 0% {
-    margin-left: 0px;
- }
- 100% {
-    margin-left: -2125px;
- }
- 
+  animation: bannermove 10s linear infinite;
 }
 
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
 
 @media (max-width: 576px) {
-    .hero-section-content h1{
-        font-size: 2rem !important;
-        }
-        .hero-section-content p{
-            font-size: 0.9rem !important;
-        }
-        .sales-everyone-section h2,
+  .hero-section-content h1 {
+    font-size: 2rem !important;
+  }
+  .hero-section-content p {
+    font-size: 0.9rem !important;
+  }
+  .sales-everyone-section h2,
   .content-section h2,
   .templates-section h2,
   .work-together-section h2,
-  .surprise-section h2 , .brands-section h2 {
+  .surprise-section h2,
+  .brands-section h2 {
     font-size: 24px !important;
   }
-  }
- 
+}
