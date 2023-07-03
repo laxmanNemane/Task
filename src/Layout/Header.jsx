@@ -6,48 +6,18 @@ import { HiMenu, HiOutlineSearch } from "react-icons/hi";
 import { BiChevronDown } from "react-icons/bi";
 import DropDownMenu from "./DropDownMenu";
 const Header = () => {
-  const [click, setClick] = useState(false);
-  const [menuItems, setMenuItems] = useState([
-    { id: 1, name: "Design Spotlight" },
-    { id: 2, name: "Business" },
-    { id: 3, name: "Education" },
-    { id: 4, name: "Plans and pricing" },
-    { id: 5, name: "Learn" },
-  ]);
-
-  const [visibleItems, setVisibleItems] = useState([]);
-  const [show, setShow] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
-  const handleResize = () => {
-    if (window.innerWidth < 908) {
-      // Show dropdown and hide menu items one by one
-      setShowDropdown(true);
-      setVisibleItems(menuItems.slice(0, -1));
-    } else if (window.innerWidth < 808) {
-      // Show dropdown and hide menu items one by one
-      setShowDropdown(true);
-      setVisibleItems(menuItems.slice(0, -1));
-    } else if (window.innerWidth < 708) {
-      // Show dropdown and hide menu items one by one
-      setShowDropdown(true);
-      setVisibleItems(menuItems.slice(0, -1));
-    } else if (window.innerWidth < 608) {
-      // Show dropdown and hide menu items one by one
-      setShowDropdown(true);
-      setVisibleItems(menuItems.slice(0, -1));
-    } else if (window.innerWidth < 508) {
-      // Show dropdown and hide menu items one by one
-      setShowDropdown(true);
-      setVisibleItems(menuItems.slice(0, -1));
-    } else {
-      // Show all menu items and hide dropdown
-      setShowDropdown(false);
-      setVisibleItems(menuItems);
-    }
-  };
+  const [headerState, setHeaderState] = useState({
+    menuItems: [
+      { id: 1, name: "Design Spotlight" },
+      { id: 2, name: "Business" },
+      { id: 3, name: "Education" },
+      { id: 4, name: "Plans and pricing" },
+      { id: 5, name: "Learn" },
+    ],
+    visibleItems: [],
+    show: false,
+    showDropdown: false,
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,11 +36,12 @@ const Header = () => {
         visibleCount = 3;
       }
 
-      setVisibleItems(menuItems.slice(0, visibleCount));
-      setShowDropdown(visibleCount < menuItems.length);
+      setHeaderState({
+        ...headerState,
+        visibleItems: headerState?.menuItems.slice(0, visibleCount),
+        showDropdown: true,
+      });
     };
-
-    setClick(true);
 
     // Event listener for window resize
     window.addEventListener("resize", handleResize);
@@ -81,10 +52,10 @@ const Header = () => {
     };
   }, [window.innerWidth]);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => setHeaderState({ ...headerState, show: false });
 
-  console.log(menuItems, visibleItems, "menuitssm");
+  const onOpenhandler = () => setHeaderState({ ...headerState, show: true });
+
   return (
     <>
       <div className="Header-section">
@@ -93,7 +64,7 @@ const Header = () => {
           style={{ justifyContent: "flex-start" }}
         >
           <div className="hamburger">
-            <span onClick={() => setShow((prev) => !prev)} className="me-2">
+            <span onClick={onOpenhandler} className="me-2">
               <HiMenu />
             </span>
           </div>
@@ -109,18 +80,18 @@ const Header = () => {
           </div>
           <div className=" pt-1 mr-2 div-to-disabl">
             <ul className="d-flex list-unstyled m-0">
-              {visibleItems?.length !== 0
-                ? visibleItems.map((item) => (
+              {headerState?.visibleItems?.length !== 0
+                ? headerState?.visibleItems.map((item) => (
                     <li key={item.id}>
                       <DropDownMenu menuName={item.name} />
                     </li>
                   ))
-                : menuItems?.map((item) => (
+                : headerState?.menuItems?.map((item) => (
                     <li key={item.id} className="small-disable">
                       <DropDownMenu menuName={item.name} />
                     </li>
                   ))}
-              {showDropdown && (
+              {headerState?.showDropdown && (
                 <li className="dropdown-menu">
                   <button
                     className="dropdown-toggle"
@@ -136,7 +107,7 @@ const Header = () => {
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton"
                   >
-                    {menuItems.slice(-1).map((item) => (
+                    {headerState?.menuItems.slice(-1).map((item) => (
                       <DropDownMenu key={item.id} menuName={item.name} />
                     ))}
                   </div>
@@ -180,15 +151,15 @@ const Header = () => {
 
           {/* offcanvass body */}
           <Offcanvas
-            show={show}
+            show={headerState?.show}
             onHide={handleClose}
             style={{ width: "250px" }}
           >
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body>
               <ul className="menu-list list-unstyled d-flex flex-column">
-                {visibleItems?.length === 0 &&
-                  menuItems.map((item) => (
+                {headerState?.visibleItems?.length === 0 &&
+                  headerState?.menuItems.map((item) => (
                     <DropDownMenu
                       key={item.id}
                       className="my-1 pb-3 navbar-menu"
