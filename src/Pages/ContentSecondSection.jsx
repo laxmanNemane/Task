@@ -15,7 +15,7 @@ const ContentSecondSection = () => {
                     Invite people to edit with you or set your whole team up to
                     manage brand assets, brainstorm on{" "}
                     <span className="link-sales">whiteboards</span> , get
-                    approvals, and scale content with tools like{" "}
+                    approvals, and scale content with tools like
                     <span className="link-sales">docs</span>.
                   </p>
                   <div className="btn-group">

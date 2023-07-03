@@ -28,11 +28,6 @@ const ConatnentThirdSection = () => {
                     creations shine in the real world. Easily publish, download
                     or share whatever you make in Canva. You can even have it
                     printed and dropped straight at your door!
-                    {/* Benefit from thousands of professional templates, images,
-                    and quality content to choose from, for example when
-                    ordering new{" "}
-                    <span className="link-sales">business cards</span> or
-                    editing your next <span className="link-sales">video</span>. */}
                   </p>
                   <div className="btn-group">
                     <Button

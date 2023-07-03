@@ -50,7 +50,6 @@ const HeroSection = () => {
               <source
                 src="https://content-management-files.canva.com/943bd1b3-ffd6-4892-a4df-b107cb33e657/hero-banner-en-1600x852.mp4"
                 type="video/mp4"
-                // style={{ width: "100%", height: "100%" }}
               />
               {/* Fallback image */}
               <img src="fallback-image.jpg" alt="Fallback Image" />

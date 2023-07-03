@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Button from "../Component/Button";
 import "./Header.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { HiMenu, HiOutlineSearch } from "react-icons/hi";
-import { BiChevronDown } from "react-icons/bi";
 import DropDownMenu from "./DropDownMenu";
 const Header = () => {
   const [headerState, setHeaderState] = useState({
